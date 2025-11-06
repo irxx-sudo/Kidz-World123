@@ -1,0 +1,16 @@
+// Initialize cart count
+let cartCount = 0;
+
+// Select all "Add" buttons
+const buttons = document.querySelectorAll('.button');
+
+// Update cart value display
+const cartValue = document.getElementById('cart-value');
+
+// Add click event to each button
+buttons.forEach(button => {
+  button.addEventListener('click', () => {
+    cartCount++;
+    cartValue.textContent = cartCount;
+  });
+});

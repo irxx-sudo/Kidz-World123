@@ -1,0 +1,172 @@
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background-color: #fdfdfd;
+  color: #333;
+  padding: 0 1rem;
+}
+
+/* Flex utilities */
+.flex {
+  display: flex;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.space-evenly {
+  justify-content: space-evenly;
+}
+
+/* Navigation */
+nav {
+  padding: 1rem 0;
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+}
+
+nav img {
+  height: 40px;
+}
+
+#cart {
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* Header */
+header {
+  background: linear-gradient(to right, #ffecd2, #fcb69f);
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+.header-text {
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+header h1 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+header h5 {
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Section container */
+.section-container {
+  flex-direction: column;
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+/* Individual section */
+.section h2 {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  color: #444;
+}
+
+.container {
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+/* Product cards */
+.container > div {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 1rem;
+  width: calc(33.333% - 1rem);
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.container img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 0.5rem;
+}
+
+.buy {
+  margin-top: 0.5rem;
+  align-items: center;
+}
+
+.button {
+  background-color: #ff6f61;
+  color: white;
+  padding: 0.3rem 0.6rem;
+  border-radius: 4px;
+  cursor: pointer;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.button img {
+  height: 16px;
+}
+
+/* Footer */
+footer {
+  margin-top: 3rem;
+  padding: 2rem 0;
+  border-top: 1px solid #ccc;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+footer img {
+  height: 40px;
+}
+
+#details {
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .container > div {
+    width: calc(50% - 1rem);
+  }
+
+  nav, footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .header-text h1 {
+    font-size: 1.5rem;
+  }
+
+  .section-container {
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .container > div {
+    width: 100%;
+  }
+
+  .button {
+    font-size: 0.8rem;
+  }
+
+  header h1 {
+    font-size: 1.2rem;
+  }
+}
