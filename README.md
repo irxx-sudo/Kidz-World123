@@ -25,15 +25,6 @@ The project was built to practice and strengthen front-end development fundament
 - CSS3  
 - JavaScript  
 
-## Project Structure
-KidzWorld-Kalvium
-├── index.html
-├── style.css
-├── script.js
-├── assets/
-└── README.md
-
-
 ## Purpose
 
 This project was created purely for **learning and practice** as part of Kalvium’s web development curriculum.
